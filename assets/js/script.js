@@ -13,6 +13,9 @@ if(cantidadVeces > cont) {
         
         var eleccion = prompt("Ingrese su jugada (piedra, papel o tijera)").toLowerCase();
         
+        //Hacemos una pequeña validacion para asegurarnos de que ingrese una palabra correcta
+        if (eleccion =="piedra" || eleccion =="papel" || eleccion == "tijera") {
+
         
         // numero random entre 1 y 3 y asignacion de valor de jugada
         //1 para piedra
@@ -72,7 +75,9 @@ if(cantidadVeces > cont) {
 
 
         }
-        
+    }else {
+        alert("Por favor, asegurate de escribir bien la palabra (Independiente si es con mayuscula o minuscula), actualiza la pagina para intentarlo nuevamente.")
+    }
         //Ejecutamos la funcion random
         random();
       
